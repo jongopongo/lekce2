@@ -157,3 +157,15 @@ console.log("Year Published:", book2.yearPublished);
 console.log("Publisher:", book2.publisher.name);
 console.log("Publisher Location:", book2.publisher.location);
 console.log("Rating:", book2.rating);
+
+//Vytvořte objekt person, do kterého vložte uživatelem zadané údaje. Objekt bude mít následující strukturu
+
+const person = {
+  name: prompt("Jaké je vaše jméno a příjmení?"),
+  age: Number(prompt("Jaký je váš věk?")),
+  language: window.navigator.language,
+};
+
+document.body.innerHTML += "<p>Zadané jméno: " + person.name + ", váš věk: " + person.age + "</p>";
+document.body.innerHTML += "<p>Váš jazyk: " + person.language + "</p>";
+document.body.innerHTML += "<p>Byli jste zaregistrováni na očkování.</p>";
