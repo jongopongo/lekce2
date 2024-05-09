@@ -1,0 +1,12 @@
+/* style.css */
+.msg {
+    color: white;
+    padding: 10px;
+  }
+  .msg--valid {
+    background-color: green;
+  }
+  .msg--invalid {
+    background-color: red;
+  }
+  

@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email & Credit Card Validation</title>
+</head>
+<body>
+    <!-- Prázdný ostavec pro zobrazení zprávy pro uživatele-->
+    <p id="msg" class="msg"></p>
+
+     <!-- Include validator.js library -->
+    <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+  
+    <!-- Odkaz na můj JavaScript soubor -->
+    <script src="index.js"></script>
+    <script>
+    const email = "zkouska@email.cz"; // Nastavení e-mailu
+    const cardNumber = "4125010001000208"; // Číslo platební karty pro ověření
+    const msgElement = document.getElementById("msg");
+
+    // Ověření e-mailové adresy
+    if (validator.isEmail(email)) {
+        msgElement.innerText = "Emailová adresa je platná.";
+    } else {
+        msgElement.innerText = "Emailová adresa je neplatná.";
+    }
+
+    // Ověření čísla platební karty
+    if (validator.isCreditCard(cardNumber)) {
+        msgElement.innerText += " Kreditní karta je platná.";
+    } else {
+        msgElement.innerText += " Kreditní karta je neplatná.";
+    }
+</script>
+</body>
+</html>
