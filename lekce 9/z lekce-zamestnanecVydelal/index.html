@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Smielys</title>
+</head>
+<body>
+  <form id="reg">
+    <label class="field">Jmeno: <input type="text" id="firstName"></label>
+    <label class="field">Pocet hodin: <input type="text" id="hours"></label>
+    <label class="field">Heslo: <input type="text" id="password"></label>
+
+    <label class="field">
+        Spoluprace: 
+        <select id="partnership">
+          <option value="za">Zamestnanec</option>
+          <option value="os">OSVC</option>
+        </select>
+    </label>
+    
+    <div class="controls">
+        <button type="submit">Přihlásit</button>
+    </div>
+</form>
+
+<p id="info"></p>
+    <script src="script.js"></script>
+</body>
+</html>
