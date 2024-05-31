@@ -37,15 +37,14 @@
     button.innerHTML = 'Objednano';
   });
   
-  /* Kontrola dostupnosti - nastaveni casovace zaktivni tlacitko*/
+  // Kontrola dostupnosti - nastaveni casovace zaktivni tlacitko
   setTimeout(() => {
     button.removeAttribute('disabled');
     button.innerHTML = 'Objednano';
 }, 4000);
 
-/*Přidat EventListener pro kliknutí na button*/
+//Přidat EventListener pro kliknutí na button
 button.addEventListener("click", () => {
   button.innerText = "Objednáno";
 });
-
 

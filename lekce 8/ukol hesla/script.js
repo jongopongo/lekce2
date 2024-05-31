@@ -41,3 +41,4 @@ document.body.innerHTML += `
 <p>${createAccount('Řízek', mediumPassword)}</p>
 <p>${createAccount('Mápodčepicí', strongPassword)}</p>
 `;
+
