@@ -1,0 +1,5 @@
+/*Napište funkci first, která jako svůj parametr přijme pole a vrátí první prvek tohoto pole. 
+Pokud pole bude prázdné, funkce vrátí undefined. Funkci otestujte s několika různými poli.*/
+
+console.log(first([3, 2, 1])); // Výstup: 3
+console.log(first([]));         // Výstup: undefined
